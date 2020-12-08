@@ -4,19 +4,18 @@ export default class App {
         for (let i=1; i<=5; i++) {
             (sumatoria = sumatoria + 1/i);
         }
-        return parseFloat((sumatoria + 1/numero).toFixed(2));
+        return parseFloat(((1+(1/2)+(1/3)+(1/4)+(1/5))+(1/numero)).toFixed(2));
     }
     sumatoriaSerieDos(numero) {
         let i = 0;
-        let sumatoria = 0;
         while (i<=1) {
             i++;
         }
-        return parseFloat((1+(1/2)-(1/3)+(1/4)-(1/5)+(1/numero)).toFixed(2))
+        return parseFloat(((1+(1/2)-(1/3)+(1/4)-(1/5))+(1/numero)).toFixed(2));
     }
 }
 
 let app = new App();
 
-console.log(app.sumatoriaSerieUno(6));
-console.log(app.sumatoriaSerieDos(6));
+console.log(app.sumatoriaSerieUno(9));
+console.log(app.sumatoriaSerieDos(10));
