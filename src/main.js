@@ -1,8 +1,10 @@
 export default class App {
     sumatoriaSerieUno(numero) {
+        let suma;
         for (let i=1; i<=1; i++) {
-            return parseFloat(1+(parseFloat(((1/2)+(1/3)+(1/4)+(1/5)+(1/numero)).toFixed(2)).toFixed(2)));
         }
+        suma = parseFloat(((1/2)+(1/3)+(1/4)+(1/5)+(1/numero)).toFixed(2));
+        return parseFloat((suma + 1).toFixed(2));
     }
     sumatoriaSerieDos(numero) {
         let i = 0;
