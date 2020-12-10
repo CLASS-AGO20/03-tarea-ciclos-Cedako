@@ -64,11 +64,12 @@ export default class App {
         }
         do {
             if (i%2 !== 0) {
-                impares+=i+",";
+                impares+=i;
             }
             i--
         }
         while(i>=numero2);
+        impares = impares.split("");
         return impares;
     }
 }
@@ -79,4 +80,4 @@ console.log(app.sumatoriaSerieUno(300/311));
 console.log(app.sumatoriaSerieDos(10));
 console.log(app.esPrimo(212));
 console.log(app.obtenerMultiplos(1,10));
-console.log(app.obtenerImpares(1,5))
+console.log(app.obtenerImpares(1,10))
