@@ -23,13 +23,16 @@ export default class App {
         let i = 1;
         let primo = 0;
         do {
-            if ((numero%i) = 0) {
-                primo++
+            if (numero%i === 0) {
+                primo++;
             }
-            i++
+            i++;
         }
         while (i<=numero);
         if (primo==2) {
+            return true;
+        }
+        else if (numero === 1) {
             return true;
         }
         else {
@@ -42,4 +45,4 @@ let app = new App();
 
 console.log(app.sumatoriaSerieUno(300/311));
 console.log(app.sumatoriaSerieDos(10));
-console.log(app.esPrimo(3))
+console.log(app.esPrimo(24))
