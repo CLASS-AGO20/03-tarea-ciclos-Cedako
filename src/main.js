@@ -38,11 +38,16 @@ export default class App {
         else {
             return false;
         }
-    } 
+    }
+
+    obtenerMultiplos(inicio, fin) {
+        return 
+    }
 }
 
 let app = new App();
 
 console.log(app.sumatoriaSerieUno(300/311));
 console.log(app.sumatoriaSerieDos(10));
-console.log(app.esPrimo(24))
+console.log(app.esPrimo(212));
+console.log(app.obtenerMultiplos(1,10));
