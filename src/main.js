@@ -41,7 +41,16 @@ export default class App {
     }
 
     obtenerMultiplos(inicio, fin) {
-        return 
+        let multiplos = "";
+        let i=inicio;
+        do {
+            if (i%3===0) {
+                multiplos+=i;
+            }
+            i++
+        }
+        while(i<=fin);
+        return multiplos;
     }
 }
 
